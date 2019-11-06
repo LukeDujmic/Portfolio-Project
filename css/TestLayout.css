@@ -1,0 +1,148 @@
+
+body
+{
+    background-color: rgb(0, 0, 51);
+}
+
+/*header
+{
+    height: 400px;
+    width: 2000px;
+}*/
+.center
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+div#core
+{
+    position: absolute;
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    transition: 1s;
+    top: 200px;
+    left: 200px;
+}
+
+div#core:hover
+{
+    position: absolute;
+    transform: scale(1.5);
+    transition: 1s;
+
+}   
+
+div#core > div#one
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+div#core > div#two
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+div#core > div#three
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+div#core > div#four
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+div#core > div#five
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+
+div#core:hover > div#one
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 20px;
+    width: 100px;
+    border-radius: 4px;
+    transition: 1s;
+    transform: translate(-50px, -100px);
+
+}
+
+div#core:hover > div#two
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 20px;
+    width: 100px;
+    border-radius: 4px;
+    transition: 1s;
+    transform: translate(75px, -25px);
+}
+
+div#core:hover > div#three
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 20px;
+    width: 100px;
+    border-radius: 4px;
+    transition: 1s;
+    transform: translate(75px, 75px);
+}
+
+div#core:hover > div#four
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 20px;
+    width: 100px;
+    border-radius: 4px;
+    transition: 1s;
+    transform: translate(-175px, 75px);
+}
+
+div#core:hover > div#five
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 20px;
+    width: 100px;
+    border-radius: 4px;
+    transition: 1s;
+    transform: translate(-175px, -25px);
+
+}
