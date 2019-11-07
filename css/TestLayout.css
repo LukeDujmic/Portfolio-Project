@@ -9,37 +9,68 @@ body
     height: 400px;
     width: 2000px;
 }*/
+
+nav
+{
+    display: block;
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.11);
+    margin: auto;
+}
+
+
+
+#expandNav
+{
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.205);
+    transition: 1s;
+    border-radius: 50%;
+}
+
+#expandNav:hover
+{
+    width: 400px;
+    height: 400px;
+    transition: 1s;
+}
+
 .center
 {
     margin: 0;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
-div#core
+div#cluster
 {
-    position: absolute;
-    background-color: black;
-    height: 200px;
-    width: 200px;
+    position: relative;
+    background-color: rgba(0, 0, 26, 0.247);
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     transition: 1s;
-    top: 200px;
-    left: 200px;
+
+    z-index: 5;
 }
 
-div#core:hover
+#expandNav:hover > div#cluster
 {
-    position: absolute;
-    transform: scale(1.5);
-    transition: 1s;
+    background-color: rgba(1, 0, 59, 0.466);
+    height: 150px;
+    width: 150px;
+}
 
-}   
 
-div#core > div#one
+#expandNav > div#cluster > a > div#one
 {
     position: absolute;
     background-color: rgb(255, 255, 255);
@@ -47,9 +78,11 @@ div#core > div#one
     width: 20px;
     border-radius: 50%;
     transition: 1s;
+    z-index: 3;
+
 }
 
-div#core > div#two
+#expandNav > div#cluster > a > div#two
 {
     position: absolute;
     background-color: rgb(255, 255, 255);
@@ -57,9 +90,10 @@ div#core > div#two
     width: 20px;
     border-radius: 50%;
     transition: 1s;
+    z-index: 3;
 }
 
-div#core > div#three
+#expandNav > div#cluster > a > div#three
 {
     position: absolute;
     background-color: rgb(255, 255, 255);
@@ -67,9 +101,10 @@ div#core > div#three
     width: 20px;
     border-radius: 50%;
     transition: 1s;
+    z-index: 3;
 }
 
-div#core > div#four
+#expandNav > div#cluster > a > div#four
 {
     position: absolute;
     background-color: rgb(255, 255, 255);
@@ -77,9 +112,10 @@ div#core > div#four
     width: 20px;
     border-radius: 50%;
     transition: 1s;
+    z-index: 3;
 }
 
-div#core > div#five
+#expandNav > div#cluster > a > div#five
 {
     position: absolute;
     background-color: rgb(255, 255, 255);
@@ -87,59 +123,327 @@ div#core > div#five
     width: 20px;
     border-radius: 50%;
     transition: 1s;
+    z-index: 3;
 }
 
 
-div#core:hover > div#one
+#expandNav:hover > div#cluster > a > div#one
 {
     position: absolute;
     background-color: rgb(255, 255, 255);
-    height: 20px;
+    height: 40px;
     width: 100px;
     border-radius: 4px;
     transition: 1s;
-    transform: translate(-50px, -100px);
+    transform: translate(-50px, -112.5px);
 
 }
 
-div#core:hover > div#two
+#expandNav:hover > div#cluster > a > div#two
 {
     position: absolute;
     background-color: rgb(255, 255, 255);
-    height: 20px;
+    height: 40px;
     width: 100px;
     border-radius: 4px;
     transition: 1s;
     transform: translate(75px, -25px);
 }
 
-div#core:hover > div#three
+#expandNav:hover > div#cluster > a > div#three
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    transition: 1s;
+    transform: translate(25px, 75px);
+}
+
+#expandNav:hover > div#cluster > a > div#four
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    transition: 1s;
+    transform: translate(-125px, 75px);
+}
+
+#expandNav:hover > div#cluster > a > div#five
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    transition: 1s;
+    transform: translate(-175px, -25px);
+
+}
+
+#expandNav > div#cluster > div#core1
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    transition: 1s;
+    z-index: 2;
+}
+
+#expandNav > div#cluster > div#core2
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    transition: 1s;
+    z-index: 2;
+}
+
+#expandNav > div#cluster > div#core3
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    transition: 1s;
+    z-index: 2;
+}
+
+#expandNav > div#cluster > div#core4
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    transition: 1s;
+    z-index: 2;
+}
+
+#expandNav > div#cluster > div#core5
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    transition: 1s;
+    z-index: 2;
+}
+
+
+#expandNav:hover > div#cluster > div#core1
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    width: 50px;
+    transition: 1s;
+    transform: translate(-25px, -50px);
+
+}
+
+#expandNav:hover > div#cluster > div#core2
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    width: 50px;
+    transition: 1s;
+    transform: translate(0px, -25px);
+}
+
+#expandNav:hover > div#cluster > div#core3
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    width: 50px;
+    transition: 1s;
+    transform: translate(-12.5px, 0px);
+}
+
+#expandNav:hover > div#cluster > div#core4
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    width: 50px;
+    transition: 1s;
+    transform: translate(-37.5px, 0px);
+}
+
+#expandNav:hover > div#cluster > div#core5
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    width: 50px;
+    transition: 1s;
+    transform: translate(-50px, -25px);
+
+}
+
+#expandNav > div#cluster > div#branch1
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 1px;
+    width: 1px;
+    transition: 1s;
+    transform: rotateZ(90deg);
+}
+
+#expandNav > div#cluster > div#branch2
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 1px;
+    width: 1px;
+    transition: 1s;
+    transform: rotateZ(-12deg);
+}
+
+#expandNav > div#cluster > div#branch3
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 1px;
+    width: 1px;
+    transition: 1s;
+    transform: rotateZ(60deg);
+}
+
+#expandNav > div#cluster > div#branch4
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 1px;
+    width: 1px;
+    transition: 1s;
+    transform: rotateZ(-60deg);
+}
+
+#expandNav > div#cluster > div#branch5
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 1px;
+    width: 1px;
+    transition: 1s;
+    transform: rotateZ(12deg);
+}
+
+
+#expandNav:hover > div#cluster > div#branch1
+{
+    position: absolute;
+    background-color: rgb(212, 255, 253);
+    height: 20px;
+    width: 100px;
+    transition: 1s;
+    transform: rotateZ(90deg) translate(-50px, 50px);
+}
+
+#expandNav:hover > div#cluster > div#branch2
 {
     position: absolute;
     background-color: rgb(255, 255, 255);
     height: 20px;
     width: 100px;
-    border-radius: 4px;
     transition: 1s;
-    transform: translate(75px, 75px);
+    transform: translate(25px, -15px) rotateZ(-12deg);
 }
 
-div#core:hover > div#four
+#expandNav:hover > div#cluster > div#branch3
 {
     position: absolute;
     background-color: rgb(255, 255, 255);
     height: 20px;
     width: 100px;
-    border-radius: 4px;
     transition: 1s;
-    transform: translate(-175px, 75px);
+    transform: translate(-10px, 50px) rotateZ(60deg);
 }
 
-div#core:hover > div#five
+#expandNav:hover > div#cluster > div#branch4
 {
     position: absolute;
     background-color: rgb(255, 255, 255);
     height: 20px;
+    width: 100px;
+    transition: 1s;
+    transform: translate(-90px, 50px) rotateZ(-60deg);
+}
+
+#expandNav:hover > div#cluster > div#branch5
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 20px;
+    width: 100px;
+    transition: 1s;
+    transform: translate(-125px, -15px) rotateZ(12deg);
+
+}
+
+#expandNav:hover > div#cluster > a > div#one:hover
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    transition: 0.33s;
+    transform: translate(-50px, -120px) scale(1.25);
+    
+}
+
+#expandNav:hover > div#cluster > a > div#two
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    transition: 1s;
+    transform: translate(75px, -25px);
+}
+
+#expandNav:hover > div#cluster > a > div#three
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    transition: 1s;
+    transform: translate(25px, 75px);
+}
+
+#expandNav:hover > div#cluster > a > div#four
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    transition: 1s;
+    transform: translate(-125px, 75px);
+}
+
+#expandNav:hover > div#cluster > a > div#five
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
     width: 100px;
     border-radius: 4px;
     transition: 1s;
