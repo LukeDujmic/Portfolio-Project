@@ -12,13 +12,14 @@
     src: url(../fonts/YeonSung-Regular.ttf);
 }
 
-
+@media only screen and (max-width: 799px)
+{
 /* Grid Layouts */
 #outer-grid 
 {
     display: grid;
     grid-template-rows: auto auto auto auto;
-    grid-template-columns: 0.7fr 0.3fr;
+    grid-template-columns: 1fr;
     overflow-wrap: break-word;
 }
 
@@ -36,14 +37,14 @@
 header
 {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
 }
 nav
 {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 4;
 }
@@ -58,7 +59,7 @@ nav
 footer
 {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
 }
@@ -67,10 +68,11 @@ footer
 html
 {
     font-family: 'Sung';
+    overflow-x: hidden;
 }
 body
 {
-    background-color: rgb(0, 0, 51);
+    background-color: rgb(0, 23, 126);
     font-family: 'Sung';
 }
 
@@ -80,14 +82,18 @@ body
     width: 2000px;
 }*/
 
+/* HUGE NAVIGATION AREA */
 nav
 {
     display: block;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 500px;
     background-color: rgba(0, 0, 0, 0.466);
     margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    z-index: 5;
 }
 
 
@@ -150,7 +156,7 @@ div#cluster
 #expandNav > div#cluster > a > div#home
 {
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     height: 2px;
     width: 5px;
     border-radius: 5%;
@@ -160,12 +166,14 @@ div#cluster
 
 }
 
+
 #expandNav > p
 {
     position: absolute;
     font-size: 50px;
     z-index: 100;
     transition: 2s;
+    color: white;
 }
 
 #expandNav:hover > p
@@ -175,18 +183,33 @@ div#cluster
     filter: opacity(0);
     z-index: 1;
     transition: 1s;
+    color: white;
 }
 
 #expandNav:hover > div#cluster > a > div#home
 {
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     height: 22px;
     width: 55px;
     border-radius: 5%;
-    transition: 1s;
+    transition: 0.5s;
     z-index: 4;
 
+
+}
+
+#expandNav:hover > div#cluster > a > div#home:hover
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 28px;
+    width: 80px;
+    
+    border-radius: 15%;
+    transition: 0.5s;
+    z-index: 4;
+    box-shadow: white 0px 5px 10px;
 
 }
 
@@ -204,6 +227,7 @@ div#cluster
     filter: opacity(100%);
     transition: 1.25s;
     font-size: 150%;
+    color: white;
 }
 
 /* */
@@ -211,7 +235,7 @@ div#cluster
 #expandNav > div#cluster > a > div#one
 {
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -224,7 +248,7 @@ div#cluster
 #expandNav > div#cluster > a > div#two
 {
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -235,7 +259,7 @@ div#cluster
 #expandNav > div#cluster > a > div#three
 {
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -246,7 +270,7 @@ div#cluster
 #expandNav > div#cluster > a > div#four
 {
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -257,7 +281,7 @@ div#cluster
 #expandNav > div#cluster > a > div#five 
 {
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -268,7 +292,7 @@ div#cluster
 #expandNav > div#cluster > a > div#six
 {
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -282,7 +306,7 @@ div#cluster
     transition: 1s;
     z-index: 3;
     filter: opacity(0%);
-    padding: 9px;
+    padding: 2px;
     display: block;
     position: relative;
     text-align: center;
@@ -293,7 +317,7 @@ div#cluster
     transition: 1s;
     z-index: 3;
     filter: opacity(0%);
-    padding: 9px;
+    padding: 2px;
     display: block;
     position: relative;
     text-align: center;
@@ -304,7 +328,7 @@ div#cluster
     transition: 1s;
     z-index: 3;
     filter: opacity(0%);
-    padding: 9px;
+    padding: 2px;
     display: block;
     position: relative;
     text-align: center;
@@ -315,7 +339,7 @@ div#cluster
     transition: 1s;
     z-index: 3;
     filter: opacity(0%);
-    padding: 9px;
+    padding: 2px;
     display: block;
     position: relative;
     text-align: center;
@@ -326,7 +350,7 @@ div#cluster
     transition: 1s;
     z-index: 3;
     filter: opacity(0%);
-    padding: 9px;
+    padding: 2px;
     display: block;
     position: relative;
     text-align: center;
@@ -337,7 +361,7 @@ div#cluster
     transition: 1s;
     z-index: 3;
     filter: opacity(0%);
-    padding: 9px;
+    padding: 2px;
     display: block;
     position: relative;
     text-align: center;
@@ -421,7 +445,8 @@ div#cluster
     display: block;
     transition: 1.25s;
     filter: opacity(100%);
-    color: rgb(136, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 175%;
 }
 
 #expandNav:hover > div#cluster > a > div#two > p
@@ -432,7 +457,8 @@ div#cluster
     display: block;
     transition: 1.25s;
     filter: opacity(100%);
-    color:rgb(136, 136, 0);
+    color:rgb(255, 255, 255);
+    font-size: 175%;
 }
 
 #expandNav:hover > div#cluster > a > div#three > p
@@ -443,7 +469,8 @@ div#cluster
     display: block;
     transition: 1.25s;
     filter: opacity(100%);
-    color:rgb(0, 136, 9);
+    color:rgb(255, 255, 255);
+    font-size: 175%;
 }
 
 #expandNav:hover > div#cluster > a > div#four > p
@@ -454,7 +481,8 @@ div#cluster
     display: block;
     transition: 1.25s;
     filter: opacity(100%);
-    color: rgb(0, 79, 136);
+    color: rgb(255, 255, 255);
+    font-size: 175%;
 }
 
 #expandNav:hover > div#cluster > a > div#five > p
@@ -465,8 +493,8 @@ div#cluster
     display: block;
     transition: 1.25s;
     filter: opacity(100%);
-    color: rgb(16, 0, 136);
-
+    color: rgb(255, 255, 255);
+    font-size: 175%;
 }
 
 #expandNav:hover > div#cluster > a > div#six > p
@@ -477,8 +505,8 @@ div#cluster
     display: block;
     transition: 1.25s;
     filter: opacity(100%);
-    color: rgb(127, 0, 136);
-
+    color: rgb(255, 255, 255);
+    font-size: 175%;
 }
 
 
@@ -742,6 +770,7 @@ div#cluster
     border-radius: 4px;
     transition: 0.33s;
     transform: translate(35px, -130px) scale(1.25);
+    box-shadow: rgba(255, 255, 255, 0.507) 0px 0px 50px;
     
 }
 
@@ -754,6 +783,7 @@ div#cluster
     border-radius: 4px;
     transition: 0.33s;
     transform: translate(90px, -30px) scale(1.25);
+    box-shadow: rgba(255, 255, 255, 0.507) 0px 0px 50px;
 }
 
 #expandNav:hover > div#cluster > a > div#three:hover
@@ -765,6 +795,7 @@ div#cluster
     border-radius: 4px;
     transition: 0.33s;
     transform: translate(35px, 80px) scale(1.25);
+    box-shadow: rgba(255, 255, 255, 0.507) 0px 0px 50px;
 }
 
 #expandNav:hover > div#cluster > a > div#four:hover
@@ -775,7 +806,8 @@ div#cluster
     width: 150px;
     border-radius: 4px;
     transition: 0.33s;
-    transform: translate(-135px, 80px) scale(1.25);
+    transform: translate(-185px, 80px) scale(1.25);
+    box-shadow: rgba(255, 255, 255, 0.507) 0px 0px 50px;
 }
 
 #expandNav:hover > div#cluster > a > div#five:hover
@@ -786,7 +818,8 @@ div#cluster
     width: 150px;
     border-radius: 4px;
     transition: 0.33s;
-    transform: translate(-190px, -30px) scale(1.25);
+    transform: translate(-240px, -30px) scale(1.25);
+    box-shadow: rgba(255, 255, 255, 0.507) 0px 0px 50px;
 }
 
 #expandNav:hover > div#cluster > a > div#six:hover
@@ -797,7 +830,938 @@ div#cluster
     width: 150px;
     border-radius: 4px;
     transition: 0.33s;
-    transform: translate(-135px, -130px) scale(1.25);
+    transform: translate(-185px, -130px) scale(1.25);
+    box-shadow: rgba(255, 255, 255, 0.507) 0px 0px 50px;
+}
+
+
+#expandNav:hover > div#cluster > a > div#one:hover > p
+{
+    color: rgb(255, 255, 255);
+    
+}
+
+#expandNav:hover > div#cluster > a > div#two:hover > p
+{
+    color: rgb(255, 255, 255);
+}
+
+#expandNav:hover > div#cluster > a > div#three:hover > p
+{
+    color: rgb(255, 255, 255);
+}
+
+#expandNav:hover > div#cluster > a > div#four:hover > p
+{
+    color: rgb(255, 255, 255);
+}
+
+#expandNav:hover > div#cluster > a > div#five:hover > p
+{
+    color: rgb(255, 255, 255);
+}
+
+#expandNav:hover > div#cluster > a > div#six:hover > p
+{
+    color: rgb(255, 255, 255); 
+
+}
+
+/* Header */
+header 
+{
+    background-color: rgba(255, 255, 255, 0.055);
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+h1
+{
+    display: block;
+    position: relative;
+    color: white;
+    width: 100%;
+    font-size: 5em;
+    padding-top: 50px;
+    z-index: 5;
+}
+div#cloud1
+{
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(93, 85, 255);
+    z-index: 3;
+    left: -75px;
+    top: -75px;
+}
+div#cloud2
+{
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(93, 85, 255);
+    z-index: 3;
+    left: -75px;
+    top: -75px;
+}
+div#cloud3
+{
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(93, 85, 255);
+    z-index: 3;
+    left: 175px;
+    top: 75px;
+}
+
+h2
+{
+    display: block;
+    position: relative;
+    color: rgb(195, 251, 255);
+    left: 10%;
+    width: 100%;
+    font-size: 4em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    z-index: 5;
+}
+
+}
+
+
+
+{
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1199px)
+{
+/* Grid Layouts */
+#outer-grid 
+{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 0.7fr 0.3fr;
+    overflow-wrap: break-word;
+}
+
+/*#inner-grid 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+#inner-grid > div 
+{
+    background: lightgreen;
+    padding: 8px;
+}*/
+header
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+nav
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#content
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+}
+footer
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+
+html
+{
+    font-family: 'Sung';
+}
+body
+{
+    background-color: rgb(0, 0, 51);
+    font-family: 'Sung';
+}
+
+/*header
+{
+    height: 400px;
+    width: 2000px;
+}*/
+
+/* HUGE NAVIGATION AREA */
+nav
+{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.466);
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+
+#expandNav
+{
+    position: relative;
+    /*top: 150px;*/
+    align-self: center;
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.116);
+    transition: 1s;
+    border-radius: 50%;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    
+    
+}
+
+#expandNav:hover
+{
+    width: 500px;
+    height: 500px;
+    /*top: 50px;*/
+    transition: 1s;
+}
+
+.center
+{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+div#cluster
+{
+    position: relative;
+    background-color: rgba(0, 103, 163, 0.247);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: 1s;
+
+    z-index: 5;
+}
+
+#expandNav:hover > div#cluster
+{
+    background-color: rgba(255, 255, 255, 0.466);
+    height: 150px;
+    width: 150px;
+}
+
+/* Home button */
+#expandNav > div#cluster > a > div#home
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 2px;
+    width: 5px;
+    border-radius: 5%;
+    transition: 1s;
+    z-index: 4;
+    
+
+}
+
+
+#expandNav > p
+{
+    position: absolute;
+    font-size: 50px;
+    z-index: 100;
+    transition: 2s;
+    color: white;
+}
+
+#expandNav:hover > p
+{
+    position: absolute;
+    font-size: 1px;
+    filter: opacity(0);
+    z-index: 1;
+    transition: 1s;
+    color: white;
+}
+
+#expandNav:hover > div#cluster > a > div#home
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 22px;
+    width: 55px;
+    border-radius: 5%;
+    transition: 0.5s;
+    z-index: 4;
+
+
+}
+
+#expandNav:hover > div#cluster > a > div#home:hover
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 28px;
+    width: 80px;
+    
+    border-radius: 15%;
+    transition: 0.5s;
+    z-index: 4;
+    box-shadow: white 0px 5px 10px;
+
+}
+
+#expandNav > div#cluster > a > div#home > p
+{
+    filter: opacity(0%);
+    position: relative;
+    text-align: center;
+    font-size: 1%;
+    transition: 1s;
+}
+
+#expandNav:hover > div#cluster > a > div#home > p
+{
+    filter: opacity(100%);
+    transition: 1.25s;
+    font-size: 150%;
+    color: white;
+}
+
+/* */
+
+#expandNav > div#cluster > a > div#one
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: 1s;
+    z-index: 3;
+    
+
+}
+
+#expandNav > div#cluster > a > div#two
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: 1s;
+    z-index: 3;
+}
+
+#expandNav > div#cluster > a > div#three
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: 1s;
+    z-index: 3;
+}
+
+#expandNav > div#cluster > a > div#four
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: 1s;
+    z-index: 3;
+}
+
+#expandNav > div#cluster > a > div#five 
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: 1s;
+    z-index: 3;
+}
+
+#expandNav > div#cluster > a > div#six
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: 1s;
+    z-index: 3;
+}
+
+
+#expandNav > div#cluster > a > div#one > p
+{
+    transition: 1s;
+    z-index: 3;
+    filter: opacity(0%);
+    padding: 2px;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+#expandNav > div#cluster > a > div#two > p
+{
+    transition: 1s;
+    z-index: 3;
+    filter: opacity(0%);
+    padding: 2px;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+#expandNav > div#cluster > a > div#three > p
+{
+    transition: 1s;
+    z-index: 3;
+    filter: opacity(0%);
+    padding: 2px;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+#expandNav > div#cluster > a > div#four > p
+{
+    transition: 1s;
+    z-index: 3;
+    filter: opacity(0%);
+    padding: 2px;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+#expandNav > div#cluster > a > div#five > p
+{
+    transition: 1s;
+    z-index: 3;
+    filter: opacity(0%);
+    padding: 2px;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+#expandNav > div#cluster > a > div#six > p
+{
+    transition: 1s;
+    z-index: 3;
+    filter: opacity(0%);
+    padding: 2px;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+
+
+#expandNav:hover > div#cluster > a > div#one
+{
+    position: absolute;
+    background-color: rgb(27, 0, 0);
+    height: 40px;
+    width: 150px;
+    border-radius: 4px;
+    transition: 1s;
+    transform: translate(25px, -125px);
+}
+
+#expandNav:hover > div#cluster > a > div#two
+{
+    position: absolute;
+    background-color: rgb(22, 22, 0);
+    height: 40px;
+    width: 150px;
+    border-radius: 4px;
+    transition: 1s;
+    transform: translate(75px, -25px);
+}
+
+#expandNav:hover > div#cluster > a > div#three
+{
+    position: absolute;
+    background-color: rgb(0, 29, 2);
+    height: 40px;
+    width: 150px;
+    border-radius: 4px;
+    transition: 1s;
+    transform: translate(25px, 75px);
+}
+
+#expandNav:hover > div#cluster > a > div#four
+{
+    position: absolute;
+    background-color: rgb(0, 23, 39);
+    height: 40px;
+    width: 150px;
+    border-radius: 4px;
+    transition: 1s;
+    transform: translate(-175px, 75px);
+}
+
+#expandNav:hover > div#cluster > a > div#five
+{
+    position: absolute;
+    background-color: rgb(5, 0, 46);
+    height: 40px;
+    width: 150px;
+    border-radius: 4px;
+    transition: 1s;
+    transform: translate(-225px, -25px);
+
+}
+
+#expandNav:hover > div#cluster > a > div#six
+{
+    position: absolute;
+    background-color: rgb(25, 0, 27);
+    height: 40px;
+    width: 150px;
+    border-radius: 4px;
+    transition: 1s;
+    transform: translate(-175px, -125px);
+}
+
+
+#expandNav:hover > div#cluster > a > div#one > p
+{
+    margin: auto;
+    position: relative;
+    text-align: center;
+    display: block;
+    transition: 1.25s;
+    filter: opacity(100%);
+    color: rgb(136, 0, 0);
+    font-size: 175%;
+}
+
+#expandNav:hover > div#cluster > a > div#two > p
+{
+    margin: auto;
+    position: relative;
+    text-align: center;
+    display: block;
+    transition: 1.25s;
+    filter: opacity(100%);
+    color:rgb(136, 136, 0);
+    font-size: 175%;
+}
+
+#expandNav:hover > div#cluster > a > div#three > p
+{
+    margin: auto;
+    position: relative;
+    text-align: center;
+    display: block;
+    transition: 1.25s;
+    filter: opacity(100%);
+    color:rgb(0, 136, 9);
+    font-size: 175%;
+}
+
+#expandNav:hover > div#cluster > a > div#four > p
+{
+    margin: auto;
+    position: relative;
+    text-align: center;
+    display: block;
+    transition: 1.25s;
+    filter: opacity(100%);
+    color: rgb(0, 79, 136);
+    font-size: 175%;
+}
+
+#expandNav:hover > div#cluster > a > div#five > p
+{
+    margin: auto;
+    position: relative;
+    text-align: center;
+    display: block;
+    transition: 1.25s;
+    filter: opacity(100%);
+    color: rgb(16, 0, 136);
+    font-size: 175%;
+}
+
+#expandNav:hover > div#cluster > a > div#six > p
+{
+    margin: auto;
+    position: relative;
+    text-align: center;
+    display: block;
+    transition: 1.25s;
+    filter: opacity(100%);
+    color: rgb(127, 0, 136);
+    font-size: 175%;
+}
+
+
+#expandNav > div#cluster > div#core1
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    transition: 1s;
+    z-index: 2;
+}
+
+#expandNav > div#cluster > div#core2
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    transition: 1s;
+    z-index: 2;
+}
+
+#expandNav > div#cluster > div#core3
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    transition: 1s;
+    z-index: 2;
+}
+
+#expandNav > div#cluster > div#core4
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    transition: 1s;
+    z-index: 2;
+}
+
+#expandNav > div#cluster > div#core5
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    transition: 1s;
+    z-index: 2;
+}
+
+#expandNav > div#cluster > div#core6
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    transition: 1s;
+    z-index: 2;
+}
+
+
+#expandNav:hover > div#cluster > div#core1
+{
+    position: absolute;
+    background-color: rgb(27, 0, 0);
+    height: 50px;
+    width: 50px;
+    transition: 1s;
+    transform: translate(-12.5px, -50px);
+
+}
+
+#expandNav:hover > div#cluster > div#core2
+{
+    position: absolute;
+    background-color: rgb(22, 22, 0);
+    height: 50px;
+    width: 50px;
+    transition: 1s;
+    transform: translate(0px, -25px);
+}
+
+#expandNav:hover > div#cluster > div#core3
+{
+    position: absolute;
+    background-color: rgb(0, 29, 2);
+    height: 50px;
+    width: 50px;
+    transition: 1s;
+    transform: translate(-12.5px, 0px);
+}
+
+#expandNav:hover > div#cluster > div#core4
+{
+    position: absolute;
+    background-color: rgb(0, 23, 39);
+    height: 50px;
+    width: 50px;
+    transition: 1s;
+    transform: translate(-37.5px, 0px);
+}
+
+#expandNav:hover > div#cluster > div#core5
+{
+    position: absolute;
+    background-color: rgb(5, 0, 46);
+    height: 50px;
+    width: 50px;
+    transition: 1s;
+    transform: translate(-50px, -25px);
+
+}
+
+#expandNav:hover > div#cluster > div#core6
+{
+    position: absolute;
+    background-color: rgb(25, 0, 27);
+    height: 50px;
+    width: 50px;
+    transition: 1s;
+    transform: translate(-37.5px, -50px);
+
+}
+
+#expandNav > div#cluster > div#branch1
+{
+    position: absolute;
+    background-color: rgb(27, 0, 0);
+    height: 1px;
+    width: 1px;
+    transition: 1s;
+    transform: rotateZ(-60deg);
+}
+
+#expandNav > div#cluster > div#branch2
+{
+    position: absolute;
+    background-color: rgb(22, 22, 0);
+    height: 1px;
+    width: 1px;
+    transition: 1s;
+    transform: rotateZ(-12deg);
+}
+
+#expandNav > div#cluster > div#branch3
+{
+    position: absolute;
+    background-color: rgb(0, 29, 2);
+    height: 1px;
+    width: 1px;
+    transition: 1s;
+    transform: rotateZ(60deg);
+}
+
+#expandNav > div#cluster > div#branch4
+{
+    position: absolute;
+    background-color: rgb(0, 23, 39);
+    height: 1px;
+    width: 1px;
+    transition: 1s;
+    transform: rotateZ(-60deg);
+}
+
+#expandNav > div#cluster > div#branch5
+{
+    position: absolute;
+    background-color: rgb(5, 0, 46);
+    height: 1px;
+    width: 1px;
+    transition: 1s;
+    transform: rotateZ(12deg);
+}
+
+#expandNav > div#cluster > div#branch6
+{
+    position: absolute;
+    background-color: rgb(25, 0, 27);
+    height: 1px;
+    width: 1px;
+    transition: 1s;
+    transform: rotateZ(60deg);
+}
+
+#expandNav:hover > div#cluster > div#branch1
+{
+    position: absolute;
+    background-color: rgb(27, 0, 0);
+    height: 20px;
+    width: 100px;
+    transition: 1s;
+    transform: translate(-12.5px, -75px) rotateZ(-60deg);
+}
+
+#expandNav:hover > div#cluster > div#branch2
+{
+    position: absolute;
+    background-color: rgb(22, 22, 0);
+    height: 20px;
+    width: 100px;
+    transition: 1s;
+    transform: translate(25px, -15px) rotateZ(-12deg);
+}
+
+#expandNav:hover > div#cluster > div#branch3
+{
+    position: absolute;
+    background-color: rgb(0, 29, 2);
+    height: 20px;
+    width: 100px;
+    transition: 1s;
+    transform: translate(-10px, 50px) rotateZ(60deg);
+}
+
+#expandNav:hover > div#cluster > div#branch4
+{
+    position: absolute;
+    background-color: rgb(0, 23, 39);
+    height: 20px;
+    width: 100px;
+    transition: 1s;
+    transform: translate(-90px, 50px) rotateZ(-60deg);
+}
+
+#expandNav:hover > div#cluster > div#branch5
+{
+    position: absolute;
+    background-color: rgb(5, 0, 46);
+    height: 20px;
+    width: 100px;
+    transition: 1s;
+    transform: translate(-125px, -15px) rotateZ(12deg);
+
+}
+
+#expandNav:hover > div#cluster > div#branch6
+{
+    position: absolute;
+    background-color: rgb(25, 0, 27);
+    height: 20px;
+    width: 100px;
+    transition: 1s;
+    transform: rotateZ(60deg) translate(-100px, 37.5px);
+}
+
+#expandNav:hover > div#cluster > a > div#one:hover
+{
+    position: absolute;
+    background-color: rgb(136, 0, 0);
+    height: 40px;
+    width: 150px;
+    border-radius: 4px;
+    transition: 0.33s;
+    transform: translate(35px, -130px) scale(1.25);
+    box-shadow: rgba(255, 255, 255, 0.507) 0px 0px 50px;
+    
+}
+
+#expandNav:hover > div#cluster > a > div#two:hover
+{
+    position: absolute;
+    background-color: rgb(136, 136, 0);
+    height: 40px;
+    width: 150px;
+    border-radius: 4px;
+    transition: 0.33s;
+    transform: translate(90px, -30px) scale(1.25);
+    box-shadow: rgba(255, 255, 255, 0.507) 0px 0px 50px;
+}
+
+#expandNav:hover > div#cluster > a > div#three:hover
+{
+    position: absolute;
+    background-color: rgb(0, 136, 9);
+    height: 40px;
+    width: 150px;
+    border-radius: 4px;
+    transition: 0.33s;
+    transform: translate(35px, 80px) scale(1.25);
+    box-shadow: rgba(255, 255, 255, 0.507) 0px 0px 50px;
+}
+
+#expandNav:hover > div#cluster > a > div#four:hover
+{
+    position: absolute;
+    background-color: rgb(0, 79, 136);
+    height: 40px;
+    width: 150px;
+    border-radius: 4px;
+    transition: 0.33s;
+    transform: translate(-185px, 80px) scale(1.25);
+    box-shadow: rgba(255, 255, 255, 0.507) 0px 0px 50px;
+}
+
+#expandNav:hover > div#cluster > a > div#five:hover
+{
+    position: absolute;
+    background-color: rgb(16, 0, 136);
+    height: 40px;
+    width: 150px;
+    border-radius: 4px;
+    transition: 0.33s;
+    transform: translate(-240px, -30px) scale(1.25);
+    box-shadow: rgba(255, 255, 255, 0.507) 0px 0px 50px;
+}
+
+#expandNav:hover > div#cluster > a > div#six:hover
+{
+    position: absolute;
+    background-color: rgb(127, 0, 136);
+    height: 40px;
+    width: 150px;
+    border-radius: 4px;
+    transition: 0.33s;
+    transform: translate(-185px, -130px) scale(1.25);
+    box-shadow: rgba(255, 255, 255, 0.507) 0px 0px 50px;
 }
 
 
@@ -833,7 +1797,7 @@ div#cluster
 
 }
 
-
+}
 
 
 
