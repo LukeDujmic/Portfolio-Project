@@ -871,7 +871,7 @@ div#cluster
 header 
 {
     background-color: rgba(255, 255, 255, 0.055);
-    height: auto;
+    height: 500px;
     width: 100%;
     position: relative;
 }
@@ -948,6 +948,123 @@ div#cloud5
     top: -325px;
 }
 
+div#cloud6
+{
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(93, 85, 255);
+    z-index: 3;
+    left: 300px;
+    top: 300px;
+}
+
+div#cloud7
+{
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(93, 85, 255);
+    z-index: 3;
+    left: 225px;
+    top: 400px;
+}
+
+div#cloud8
+{
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(93, 85, 255);
+    z-index: 3;
+    left: 125px;
+    top: 450px;
+}
+
+div#cloud9
+{
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    background-color: rgb(93, 85, 255);
+    z-index: 3;
+    left: 225px;
+    top: 250px;
+}
+
+div#cloud10
+{
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    background-color: rgb(93, 85, 255);
+    z-index: 3;
+    left: 125px;
+    top: 325px;
+}
+
+div#cloud11
+{
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(93, 85, 255);
+    z-index: 3;
+    left: 450px;
+    top: 300px;
+}
+
+div#cloud12
+{
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    background-color: rgb(93, 85, 255);
+    z-index: 3;
+    left: 400px;
+    top: 150px;
+}
+div#cloud13
+{
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(93, 85, 255);
+    z-index: 3;
+    left: 325px;
+    top: 125px;
+}
+div#cloud14
+{
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 62.5px;
+    height: 62.5px;
+    background-color: rgb(93, 85, 255);
+    z-index: 3;
+    left: 475px;
+    top: 75px;
+}
+
+
+
 h2
 {
     display: block;
@@ -959,6 +1076,14 @@ h2
     padding-top: 50px;
     padding-bottom: 50px;
     z-index: 5;
+}
+
+article > h2
+{
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    padding-left: 50px;
 }
 
 }
