@@ -1112,7 +1112,20 @@ article.introContent > p
     font-size: 2em;
     color: rgb(123, 235, 255);
     background-color:rgb(51, 71, 255);
-    margin: 25px;
+    margin: 25px 25px 0px 25px;
+    border-radius: 25px;
+    padding: 10px;
+    z-index: 2;
+    
+}
+
+article.introContent > p:nth-of-type(2)
+{
+    position: relative;
+    font-size: 2em;
+    color: rgb(123, 235, 255);
+    background-color:rgb(51, 71, 255);
+    top: -150px;
     border-radius: 25px;
     padding: 10px;
     z-index: 2;
@@ -1168,6 +1181,656 @@ article.introContent > div#pill4
     z-index: 1;
 }
 
+footer > #blackHole1
+{
+    background-color: black;
+    box-shadow: black 0px -50px 50px;
+    position: absolute;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    top: -50px;
+    left: -50px;
+}
+footer > #blackHole2
+{
+    background-color: black;
+    box-shadow: black 0px -50px 50px;
+    position: absolute;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    top: -75px;
+    left: 75px;
+}
+footer > #blackHole3
+{
+    background-color: black;
+    box-shadow: black 0px -50px 50px;
+    position: absolute;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: -67.5px;
+    left: 230px;
+}
+footer > #blackHole4
+{
+    background-color: black;
+    box-shadow: black 0px -50px 50px;
+    position: absolute;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    top: -33px;
+    left: 300px;
+}
+footer > #blackHole5
+{
+    background-color: black;
+    box-shadow: black 0px -50px 50px;
+    position: absolute;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    top: -100px;
+    left: 360px;
+}
+footer > #blackHole6
+{
+    background-color: black;
+    box-shadow: black 0px -50px 50px;
+    position: absolute;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: -25px;
+    left: 190px;
+}
+footer > #blackHole7
+{
+    background-color: black;
+    box-shadow: black 0px -50px 50px;
+    position: absolute;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    top: -25px;
+    left: 460px;
+}
+footer > #blackHole8
+{
+    background-color: black;
+    box-shadow: black 0px -50px 50px;
+    position: absolute;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: -70px;
+    left: 600px;
+}
+footer > #blackHole9
+{
+    background-color: black;
+    box-shadow: black 0px -50px 50px;
+    position: absolute;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    top: -25px;
+    left: 700px;
+}
+
+footer > .stars
+{
+    border-radius: 50%;
+    background-color: white;
+    
+    position: absolute;
+    z-index: 3;
+
+    
+}
+footer > #star1
+{
+    width: 4px;
+    height: 4px;
+    top: -20px;
+    left: 10px;
+    background-color: rgb(255, 254, 195);
+}
+footer > #star2
+{
+    width: 3px;
+    height: 3px;
+    top: -40px;
+    left: 12px;
+    background-color: rgb(168, 255, 255);
+}
+footer > #star3
+{
+    width: 5px;
+    height: 5px;
+    top: -10px;
+    left: 20px;
+    background-color: rgb(168, 255, 255);
+}
+footer > #star4
+{
+    width: 7px;
+    height: 7px;
+    top: -50px;
+    left: 15px;
+}
+footer > #star5
+{
+    width: 4px;
+    height: 4px;
+    top: -18px;
+    left: 30px;
+}
+footer > #star6
+{
+    width: 5px;
+    height: 5px;
+    top: -75px;
+    left: 60px;
+    background-color: rgb(255, 144, 144);
+}
+footer > #star7
+{
+    width: 6px;
+    height: 6px;
+    top: -30px;
+    left: 120px;
+}
+footer > #star8
+{
+    width: 3px;
+    height: 3px;
+    top: -40px;
+    left: 125px;
+    background-color: rgb(255, 254, 195);
+}
+footer > #star9
+{
+    width: 2px;
+    height: 2px;
+    top: -10px;
+    left: 135px;
+    background-color: rgb(168, 255, 255);
+}
+footer > #star10
+{
+    width: 3px;
+    height: 3px;
+    top: -17px;
+    left: 136px;
+}
+footer > #star11
+{
+    width: 3px;
+    height: 3px;
+    top: -19px;
+    left: 142px;
+}
+footer > #star12
+{
+    width: 3px;
+    height: 3px;
+    top: -23px;
+    left: 157px;
+}
+footer > #star13
+{
+    width: 4px;
+    height: 4px;
+    top: -42px;
+    left: 166px;
+}
+footer > #star14
+{
+    width: 3px;
+    height: 3px;
+    top: -35px;
+    left: 152px;
+}
+footer > #star15
+{
+    width: 5px;
+    height: 5px;
+    top: -56px;
+    left: 151px;
+    background-color: rgb(255, 254, 195);
+}
+footer > #star16
+{
+    width: 3px;
+    height: 3px;
+    top: -63px;
+    left: 172px;
+}
+footer > #star17
+{
+    width: 3px;
+    height: 3px;
+    top: -58px;
+    left: 185px;
+    background-color: rgb(168, 255, 255);
+}
+footer > #star18
+{
+    width: 4px;
+    height: 4px;
+    top: -20px;
+    left: 194px;
+    background-color: rgb(255, 254, 195);
+}
+footer > #star19
+{
+    width: 8px;
+    height: 8px;
+    top: -31px;
+    left: 174px;
+    background-color: rgb(255, 254, 195);
+}
+footer > #star20
+{
+    width: 3px;
+    height: 3px;
+    top: -25px;
+    left: 198px;
+}
+footer > #star21
+{
+    width: 10px;
+    height: 10px;
+    top: -59px;
+    left: 85px;
+    
+}
+footer > #star22
+{
+    width: 7px;
+    height: 7px;
+    top: -47px;
+    left: 77px;
+}
+footer > #star23
+{
+    width: 3px;
+    height: 3px;
+    top: -100px;
+    left: 156px;
+}
+footer > #star24
+{
+    width: 4px;
+    height: 4px;
+    top: -108px;
+    left: 159px;
+}
+footer > #star25
+{
+    width: 5px;
+    height: 5px;
+    top: -97px;
+    left: 162px;
+}
+footer > #star26
+{
+    width: 6px;
+    height: 6px;
+    top: -82px;
+    left: 167px;
+    background-color: rgb(255, 144, 144);
+}
+footer > #star27
+{
+    width: 4px;
+    height: 4px;
+    top: -67px;
+    left: 196px;
+}
+footer > #star28
+{
+    width: 5px;
+    height: 5px;
+    top: -62px;
+    left: 202px;
+}
+footer > #star29
+{
+    width: 3px;
+    height: 3px;
+    top: -57px;
+    left: 211px;
+    background-color: rgb(255, 254, 195);
+}
+footer > #star30
+{
+    width: 9px;
+    height: 9px;
+    top: -55px;
+    left: 219px;
+}
+footer > #star31
+{
+    width: 4px;
+    height: 4px;
+    top: -20px;
+    left: 241px;
+}
+footer > #star32
+{
+    width: 3px;
+    height: 3px;
+    top: -40px;
+    left: 246px;
+}
+footer > #star33
+{
+    width: 5px;
+    height: 5px;
+    top: -10px;
+    left: 256px;
+}
+footer > #star34
+{
+    width: 7px;
+    height: 7px;
+    top: -50px;
+    left: 257px;
+    background-color: rgb(168, 255, 255);
+}
+footer > #star35
+{
+    width: 4px;
+    height: 4px;
+    top: -18px;
+    left: 267px;
+    background-color: rgb(168, 255, 255);
+}
+footer > #star36
+{
+    width: 5px;
+    height: 5px;
+    top: -75px;
+    left: 278px;
+    background-color: rgb(255, 144, 144);
+}
+footer > #star37
+{
+    width: 6px;
+    height: 6px;
+    top: -30px;
+    left: 281px;
+}
+footer > #star38
+{
+    width: 3px;
+    height: 3px;
+    top: -40px;
+    left: 292px;
+}
+footer > #star39
+{
+    width: 2px;
+    height: 2px;
+    top: -10px;
+    left: 300px;
+    background-color: rgb(168, 255, 255);
+}
+footer > #star40
+{
+    width: 3px;
+    height: 3px;
+    top: -17px;
+    left: 315px;
+}
+footer > #star41
+{
+    width: 3px;
+    height: 3px;
+    top: -19px;
+    left: 341px;
+}
+footer > #star42
+{
+    width: 3px;
+    height: 3px;
+    top: -23px;
+    left: 356px;
+    background-color: rgb(255, 254, 195);
+}
+footer > #star43
+{
+    width: 4px;
+    height: 4px;
+    top: -42px;
+    left: 359px;
+    background-color: rgb(255, 254, 195);
+}
+footer > #star44
+{
+    width: 3px;
+    height: 3px;
+    top: -35px;
+    left: 364px;
+    background-color: rgb(255, 254, 195);
+}
+footer > #star45
+{
+    width: 5px;
+    height: 5px;
+    top: -56px;
+    left: 368px;
+}
+footer > #star46
+{
+    width: 3px;
+    height: 3px;
+    top: -63px;
+    left: 322px;
+    background-color: rgb(168, 255, 255);
+}
+footer > #star47
+{
+    width: 3px;
+    height: 3px;
+    top: -58px;
+    left: 319px;
+}
+footer > #star48
+{
+    width: 4px;
+    height: 4px;
+    top: -20px;
+    left: 333px;
+}
+footer > #star49
+{
+    width: 8px;
+    height: 8px;
+    top: -31px;
+    left: 385px;
+    background-color: rgb(255, 254, 195);
+}
+footer > #star50
+{
+    width: 3px;
+    height: 3px;
+    top: -25px;
+    left: 390px;
+}
+footer > #star51
+{
+    width: 10px;
+    height: 10px;
+    top: -59px;
+    left: 399px;
+    
+}
+footer > #star52
+{
+    width: 7px;
+    height: 7px;
+    top: -47px;
+    left: 401px;
+}
+footer > #star53
+{
+    width: 3px;
+    height: 3px;
+    top: -100px;
+    left: 403px;
+}
+footer > #star54
+{
+    width: 4px;
+    height: 4px;
+    top: -108px;
+    left: 411px;
+    background-color: rgb(255, 144, 144);
+}
+footer > #star55
+{
+    width: 5px;
+    height: 5px;
+    top: -97px;
+    left: 415px;
+}
+footer > #star56
+{
+    width: 6px;
+    height: 6px;
+    top: -82px;
+    left: 387px;
+}
+footer > #star57
+{
+    width: 4px;
+    height: 4px;
+    top: -67px;
+    left: 421px;
+}
+footer > #star58
+{
+    width: 5px;
+    height: 5px;
+    top: -62px;
+    left: 433px;
+}
+footer > #star59
+{
+    width: 3px;
+    height: 3px;
+    top: -57px;
+    left: 456px;
+}
+footer > #star60
+{
+    width: 9px;
+    height: 9px;
+    top: -55px;
+    left: 444px;
+    background-color: rgb(255, 144, 144);
+}
+footer > #star61
+{
+    width: 8px;
+    height: 8px;
+    top: -31px;
+    left: 453px;
+    background-color: rgb(168, 255, 255);
+    
+}
+footer > #star62
+{
+    width: 7px;
+    height: 7px;
+    top: -47px;
+    left: 459px;
+    background-color: rgb(168, 255, 255);
+}
+footer > #star63
+{
+    width: 3px;
+    height: 3px;
+    top: -100px;
+    left: 458px;
+    background-color: rgb(255, 254, 195);
+}
+footer > #star64
+{
+    width: 4px;
+    height: 4px;
+    top: -108px;
+    left: 442px;
+}
+footer > #star65
+{
+    width: 5px;
+    height: 5px;
+    top: -97px;
+    left: 465px;
+    background-color: rgb(255, 254, 195);
+}
+footer > #star66
+{
+    width: 6px;
+    height: 6px;
+    top: -82px;
+    left: 499px;
+}
+footer > #star67
+{
+    width: 4px;
+    height: 4px;
+    top: -67px;
+    left: 479px;
+    background-color: rgb(255, 144, 144);
+}
+footer > #star68
+{
+    width: 5px;
+    height: 5px;
+    top: -62px;
+    left: 541px;
+    background-color: rgb(168, 255, 255);
+}
+footer > #star69
+{
+    width: 3px;
+    height: 3px;
+    top: -57px;
+    left: 531px;
+}
+footer > #star70
+{
+    width: 9px;
+    height: 9px;
+    top: -55px;
+    left: 512px;
+    background-color: rgb(168, 255, 255);
+}
+
+footer
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: black;
+    z-index: 2;
+    height: 300px;
+    box-shadow: rgb(0, 0, 87) 0px -100px 100px;;
+}
+
+footer > h1
+{
+    font-size: 200%;
+    color: white;
+}
 
 
 
