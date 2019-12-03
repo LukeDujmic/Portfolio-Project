@@ -14,7 +14,7 @@
 /* Header */
 header 
 {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 29, 32, 0.5);
     height: auto;
     width: 100%;
     position: relative;
@@ -35,55 +35,7 @@ h1
     text-shadow: black 0px 5px 5px;
 }
 
-#galleryIcon
-{
-    position: relative;
-    display: table-cell;
-    width: 45%;
-    margin: 50px;
 
-}
-#galleryIcon > #box1
-{
-    position: absolute;
-    display: block;
-    z-index: 3;
-    transform: rotate(-10deg);
-    left: 0;
-    top: 0;
-    width: 75px;
-    height: 75px;
-    background-color: rgb(135, 162, 235);
-    margin: 50px;
-    box-shadow: black 5px 5px 10px;
-}
-#galleryIcon > #box2
-{
-    position: absolute;
-    display: block;
-    z-index: 2;
-    width: 75px;
-    height: 75px;
-    left: 20px;
-    top: 20px;
-    background-color: skyblue;
-    margin: 50px;
-    box-shadow: black 5px 5px 10px;
-}
-#galleryIcon > #box3
-{
-    position: absolute;
-    display: block;
-    z-index: 1;
-    transform: rotate(10deg);
-    width: 75px;
-    height: 75px;
-    left: 40px;
-    top: 40px;
-    background-color: rgb(74, 170, 207);
-    margin: 50px;
-    box-shadow: black 5px 5px 10px;
-}
 
 
 header > h2
