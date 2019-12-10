@@ -14,7 +14,7 @@
 /* Header */
 header 
 {
-    background-color: rgba(0, 29, 32, 0.5);
+    background-color: rgba(0, 55, 61, 0.5);
     height: auto;
     width: 100%;
     position: relative;
@@ -77,6 +77,7 @@ article
     display: block;
     position: relative;
     margin-bottom: 200px;
+    font-size: 300%;
 }
 
 article > h3
@@ -92,43 +93,53 @@ article > h3
     margin-top: 10px;
 }
 
-article > div#Resume
-{
-    background-color: rgba(255, 255, 255, 0.432);
-    margin: 10px;
-    padding: 5px;
-    border-radius: 15px;
-}
+/* Style inputs with type="text", select elements and textareas */
+article > .container > form > input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid rgb(4, 0, 255); /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    background-color: rgb(4, 0, 56);
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  article > .container > form > input[type=submit] {
+    background-color: rgb(0, 38, 85);
+    color: rgb(0, 217, 255);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 25px;
+    transition: 0.5s;
+    z-index: 3;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  article > .container > form > input[type=submit]:hover {
+    background-color: #001aff;
+    transform: scale(1.25);
+    transition: 0.33s;
+    color: white;
 
-article > div#Resume > h3
-{
-    font-size: 150%;
-    font-weight: bold;
-    text-shadow: white 0px 1px 2px;
-}
+  }
+  
+  /* Add a background color and some padding around the form */
+  article > .container {
+    border-radius: 5px;
+    background-color: #000000;
+    padding: 20px;
+    padding-bottom: 50px;
+  }
 
-article > div#Resume > h5
-{
-    font-size: 115%;
-    margin: 5px;
-
-}
-
-article > div#Resume > p
-{
-    margin: 10px;
-}
-
-article > div#Resume > ul
-{
-    list-style-type: disc;
-    margin: 15px;
-}
-
-article > div#Resume > ul > li
-{
-    margin-bottom: 10px;
-}
+  label
+  {
+      color: white;
+  }
 
 
 
