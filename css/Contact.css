@@ -34,7 +34,7 @@ header > h1
     text-shadow: black 0px 5px 5px;
 }
 
-header > div
+/*header > div
 {
     display: inline-block;
     position: relative;
@@ -48,8 +48,67 @@ header > div > img
 {
     width: 100px;
     position: relative;
+}*/
+div#contactIcon
+{
+    width: 35%;
+
 }
 
+div#contactIcon > div#contactIconInner
+{
+    margin: auto;
+
+}
+
+div#contactIcon > div#contactIconInner > div#mailBox
+{
+    width: 70px;
+    height: 90px;
+    background-color: rgb(107, 122, 128);
+    position: absolute;
+    display: block;
+    left: 100px;
+}
+
+div#contactIcon > div#contactIconInner > div#mailCap
+{
+    width: 12px;
+    height: 20px;
+    background-color: skyblue;
+    position: absolute;
+    display: block;
+}
+
+div#contactIcon > div#contactIconInner > div#mailPaper
+{
+    width: 12px;
+    height: 20px;
+    background-color: skyblue;
+    position: absolute;
+    display: block;
+}
+
+div#contactIcon > div#contactIconInner > div#air1
+{
+    background-color: rgb(135, 162, 235);
+    position: absolute;
+    display: block;
+}
+
+div#contactIcon > div#contactIconInner > div#air2
+{
+    background-color: rgb(135, 162, 235);
+    position: absolute;
+    display: block;
+}
+
+div#contactIcon > div#contactIconInner > div#air3
+{
+    background-color: rgb(135, 162, 235);
+    position: absolute;
+    display: block;
+}
 
 header > h2
 {
@@ -78,6 +137,8 @@ article
     position: relative;
     margin-bottom: 200px;
     font-size: 300%;
+    box-shadow: black 0px 10px 17px, black 0px -10px 17px;
+    background-color: black;
 }
 
 article > h3
