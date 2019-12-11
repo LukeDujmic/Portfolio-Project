@@ -19,22 +19,24 @@ header
     width: 100%;
     position: relative;
     box-shadow: black 0px 2px 15px;
+    z-index: 3;
+    padding-top: 25px;
 }
 
 header > h1
 {
-    display: inline-block;
+    display: table-cell;
     position: relative;
     color: white;
-    width: 60%;
+    width: 40%;
     font-size: 5em;
     padding-top: 50px;
     padding-left: 10px;
-    z-index: 5;
+    z-index: 3;
     text-shadow: black 0px 5px 5px;
 }
 
-/*header > div
+header > div
 {
     display: inline-block;
     position: relative;
@@ -51,63 +53,262 @@ header > div > img
 }*/
 div#contactIcon
 {
-    width: 35%;
-
+    width: 25%;
+    position: relative;
+    display: table-cell;
 }
 
 div#contactIcon > div#contactIconInner
 {
-    margin: auto;
 
+    position: absolute;
 }
 
 div#contactIcon > div#contactIconInner > div#mailBox
 {
     width: 70px;
     height: 90px;
-    background-color: rgb(107, 122, 128);
-    position: absolute;
-    display: block;
-    left: 100px;
-}
-
-div#contactIcon > div#contactIconInner > div#mailCap
-{
-    width: 12px;
-    height: 20px;
     background-color: skyblue;
     position: absolute;
     display: block;
+
+    z-index: 10;
+    margin-top: 50px;
+    top: 30px;
+    left: 10px;
+    box-shadow: black 0px 5px 10px; 
+    
+}
+
+div#contactIcon > div#contactIconInner > div#mailBoxInside
+{
+    width: 70px;
+    height: 110px;
+    background-color: rgb(90, 139, 158);
+    position: absolute;
+    display: block;
+
+    z-index: 1;
+    margin-top: 50px;
+    top: 10px;
+    left: 10px;
+    box-shadow: black 0px 0px 30px inset; 
+}
+
+
+div#contactIcon > div#contactIconInner > div#mailCap
+{
+    width: 46px;
+    height: 20px;
+    background-color: rgb(45, 148, 189);
+    position: absolute;
+    display: block;
+    z-index: 6;
+    top: 60px;
+    left: 22px;
+    box-shadow: black 0px 5px 10px, black 0px 0px 3px inset; 
+    transition: 0.4s;
+}
+
+div#contactIcon:hover > div#contactIconInner > div#mailCap
+{
+    width: 46px;
+    height: 20px;
+    background-color: rgb(45, 148, 189);
+    position: absolute;
+    display: block;
+    z-index: 2;
+    top: 58px;
+    left: 22px;
+    box-shadow: black 0px 0px 10px, black 0px 2px 5px inset; 
+    transform: scaleY(0.5) translateY(-15px);
+    transition: 0.4s;
+}
+
+div#contactIcon > div#contactIconInner > div#mailBoxLeft
+{
+    width: 12px;
+    height: 30px;
+    background-color: skyblue;
+    position: absolute;
+    display: block;
+    z-index: 10;
+    top: 55px;
+    left: 10px;
+    box-shadow: black 0px 0px 5px inset;
+    border-radius: 100px 0px 0px 0px;
+}
+
+div#contactIcon > div#contactIconInner > div#mailBoxRight
+{
+    width: 12px;
+    height: 30px;
+    background-color: skyblue;
+    position: absolute;
+    display: block;
+    z-index: 10;
+    top: 55px;
+    left: 68px;
+    box-shadow: black 0px 0px 5px inset;
+    border-radius: 0px 100px 0px 0px;
+}
+
+div#contactIcon > div#contactIconInner > div#mailBoxLegLeft
+{
+    width: 12px;
+    height: 30px;
+    background-color: skyblue;
+    position: absolute;
+    display: block;
+    z-index: 10;
+    top: 155px;
+    left: 10px;
+    box-shadow: black 0px 0px 5px;
+}
+
+div#contactIcon > div#contactIconInner > div#mailBoxLegRight
+{
+    width: 12px;
+    height: 30px;
+    background-color: skyblue;
+    position: absolute;
+    display: block;
+    z-index: 10;
+    top: 155px;
+    left: 68px;
+    box-shadow: black 0px 0px 5px;
 }
 
 div#contactIcon > div#contactIconInner > div#mailPaper
 {
-    width: 12px;
-    height: 20px;
-    background-color: skyblue;
+    width: 30px;
+    height: 45px;
+    background-color: rgb(135, 170, 235);
     position: absolute;
     display: block;
+    z-index: 9;
+    transition: 0.5s;
+    transform: skew(30deg);
+    box-shadow: black 0px 5px 10px; 
+    left: 10px;
+}
+
+div#contactIcon:hover > div#contactIconInner > div#mailPaper
+{
+    width: 30px;
+    height: 45px;
+    background-color: rgb(135, 170, 235);
+    position: absolute;
+    display: block;
+    z-index: 9;
+    transform: translate(20px, 55px) skewY(0deg) scale(1.25);
+    transition: 0.5s;
+    box-shadow: black 0px 5px 10px; 
+}
+
+div#contactIcon > div#contactIconInner > div#mailLogo
+{
+    width: 30px;
+    height: 45px;
+    background-color: rgb(135, 170, 235);
+    position: absolute;
+    display: block;
+    z-index: 9;
+    transition: 0.5s;
+    transform: skew(30deg);
+    box-shadow: black 0px 5px 10px; 
+    left: 10px;
+}
+
+div#contactIcon > div#contactIconInner > div#mailLogo
+{
+    width: 30px;
+    height: 45px;
+    background-color: rgb(135, 170, 235);
+    position: absolute;
+    display: block;
+    z-index: 9;
+    transition: 0.5s;
+    transform: skew(30deg);
+    box-shadow: black 0px 5px 10px; 
+    left: 10px;
 }
 
 div#contactIcon > div#contactIconInner > div#air1
 {
-    background-color: rgb(135, 162, 235);
+    background-color: rgb(255, 255, 255);
     position: absolute;
     display: block;
+    z-index: 2;
+    width: 2px;
+    height: 2px;
+    border-radius: 1000px;
+    transform: translate(0px, 0px);
+    transition: 0.5s;
+    
 }
 
 div#contactIcon > div#contactIconInner > div#air2
 {
-    background-color: rgb(135, 162, 235);
+    background-color: rgb(255, 255, 255);
     position: absolute;
     display: block;
+    z-index: 2;
+    width: 2px;
+    height: 2px;
+    border-radius: 1000px;
+    transform: translate(10px, 0px);
+    transition: 0.5s;
 }
 
 div#contactIcon > div#contactIconInner > div#air3
 {
-    background-color: rgb(135, 162, 235);
+    background-color: rgb(255, 255, 255);
     position: absolute;
     display: block;
+    z-index: 2;
+    width: 2px;
+    height: 2px;
+    border-radius: 1000px;
+    transform: translate(20px, 0px);
+    transition: 0.5s;
+    
+}
+
+div#contactIcon:hover > div#contactIconInner > div#air1
+{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: block;
+    z-index: 2;
+    border-radius: 1000px;
+    transform: translate(30px, 40px) skewY(75deg) scaleX(3) scaleY(5);
+    filter: opacity(0);
+    transition: 0.5s;
+}
+
+div#contactIcon:hover > div#contactIconInner > div#air2
+{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: block;
+    z-index: 2;
+    border-radius: 1000px;
+    transform: translate(42.5px, 40px) skewY(75deg) scaleX(3) scaleY(5);
+    filter: opacity(0);
+    transition: 0.5s;
+}
+
+div#contactIcon:hover > div#contactIconInner > div#air3
+{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: block;
+    z-index: 2;
+    border-radius: 1000px;
+    transform: translate(55px, 40px) skewY(75deg) scaleX(3) scaleY(5);
+    filter: opacity(0);
+    transition: 0.5s;
 }
 
 header > h2
@@ -137,8 +338,6 @@ article
     position: relative;
     margin-bottom: 200px;
     font-size: 300%;
-    box-shadow: black 0px 10px 17px, black 0px -10px 17px;
-    background-color: black;
 }
 
 article > h3

@@ -77,33 +77,6 @@ body
     width: 100vw;
 }
 
-/* Scrollbar stuff (USELESS FOR MOBILE BUT USING IT FOR TESTING) */
-
-::-webkit-scrollbar 
-{
-  width: 2%;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 10px rgb(0, 0, 0); 
-    border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(8, 0, 114); 
-    border-radius: 10px;
-    border: white 2px solid;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover 
-  {
-    background: #0012b3; 
-  }
-
-
 /*header
 {
     height: 400px;
@@ -1262,7 +1235,7 @@ footer > #blackHole5
     width: 200px;
     height: 200px;
     top: -100px;
-    left: 360px;
+    left: 300px;
 }
 footer > #blackHole6
 {
@@ -1285,6 +1258,7 @@ footer > #blackHole7
     height: 300px;
     top: -25px;
     left: 460px;
+    display: none;
 }
 footer > #blackHole8
 {
@@ -1296,6 +1270,7 @@ footer > #blackHole8
     height: 100px;
     top: -70px;
     left: 600px;
+    display: none;
 }
 footer > #blackHole9
 {
@@ -1307,6 +1282,7 @@ footer > #blackHole9
     height: 200px;
     top: -25px;
     left: 700px;
+    display: none;
 }
 
 footer > .stars
@@ -1809,7 +1785,7 @@ footer > #star66
     width: 6px;
     height: 6px;
     top: -82px;
-    left: 499px;
+    left: 400px;
 }
 footer > #star67
 {
@@ -1824,7 +1800,7 @@ footer > #star68
     width: 5px;
     height: 5px;
     top: -62px;
-    left: 541px;
+    left: 408px;
     background-color: rgb(168, 255, 255);
 }
 footer > #star69
@@ -1832,14 +1808,14 @@ footer > #star69
     width: 3px;
     height: 3px;
     top: -57px;
-    left: 531px;
+    left: 398px;
 }
 footer > #star70
 {
     width: 9px;
     height: 9px;
     top: -55px;
-    left: 512px;
+    left: 387px;
     background-color: rgb(168, 255, 255);
 }
 

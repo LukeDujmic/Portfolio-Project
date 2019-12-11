@@ -1,0 +1,221 @@
+
+/*header
+{
+    height: 400px;
+    width: 2000px;
+}*/
+
+
+
+@media only screen and (max-width: 799px)
+{
+
+
+/* Header */
+header 
+{
+    background-color: rgba(0, 29, 32, 0.5);
+    height: auto;
+    width: 100%;
+    position: relative;
+    box-shadow: black 0px 2px 15px;
+}
+
+header > h1
+{
+    display: inline-block;
+    position: relative;
+    color: white;
+    width: 60%;
+    font-size: 5em;
+    padding-top: 50px;
+    padding-left: 10px;
+    z-index: 5;
+    text-shadow: black 0px 5px 5px;
+}
+
+header > div
+{
+    display: inline-block;
+    position: relative;
+    width: 35%;
+    font-size: 5em;
+    z-index: 5;
+    
+}
+
+header > div > img
+{
+    width: 100px;
+    position: relative;
+}
+
+
+header > h2
+{
+    display: block;
+    position: relative;
+    color: rgb(135, 177, 180);
+    width: 55%;
+    font-size: 2em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    z-index: 5;
+    text-shadow: black 0px 5px 5px;
+    left: 40%;
+}
+
+
+
+
+
+/* content area */
+
+article
+{
+    height: auto;
+    display: block;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+article > h3
+{
+    display: block;
+    position: relative;
+    width: 90%;
+    text-align: center;
+    font-size: 3em;
+    color: rgb(195, 251, 255);
+    z-index: 5;
+    text-shadow: rgb(255, 255, 255) 0px 5px 10px;
+    margin-top: 10px;
+}
+
+article > div#Resume
+{
+    background-color: rgba(255, 255, 255, 0.432);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+article > div#Resume > h3
+{
+    font-size: 150%;
+    font-weight: bold;
+    text-shadow: white 0px 1px 2px;
+}
+
+article > div#Resume > h5
+{
+    font-size: 115%;
+    margin: 5px;
+
+}
+
+article > div#Resume > p
+{
+    margin: 10px;
+}
+
+article > div#Resume > ul
+{
+    list-style-type: disc;
+    margin: 15px;
+}
+
+article > div#Resume > ul > li
+{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+}
+
+
+
+{
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1199px)
+{
+/* Grid Layouts */
+#outer-grid 
+{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 0.7fr 0.3fr;
+    overflow-wrap: break-word;
+}
+
+/*#inner-grid 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+#inner-grid > div 
+{
+    background: lightgreen;
+    padding: 8px;
+}*/
+header
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+nav
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#content
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+}
+footer
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+
+html
+{
+    font-family: 'Sung';
+}
+body
+{
+    background-color: rgb(0, 0, 51);
+    font-family: 'Sung';
+}
+
+/*header
+{
+    height: 400px;
+    width: 2000px;
+}*/
+
+/* HUGE NAVIGATION AREA */
+
+}
+
+
+
