@@ -28,7 +28,7 @@ header > h1
     display: table-cell;
     position: relative;
     color: white;
-    width: 40%;
+    width: 20%;
     font-size: 5em;
     padding-top: 50px;
     padding-left: 10px;
@@ -36,21 +36,9 @@ header > h1
     text-shadow: black 0px 5px 5px;
 }
 
-header > div
-{
-    display: inline-block;
-    position: relative;
-    width: 35%;
-    font-size: 5em;
-    z-index: 5;
-    
-}
 
-header > div > img
-{
-    width: 100px;
-    position: relative;
-}*/
+
+
 div#contactIcon
 {
     width: 25%;
