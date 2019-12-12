@@ -89,45 +89,46 @@ article > h3
     color: rgb(195, 251, 255);
     z-index: 5;
     text-shadow: rgb(255, 255, 255) 0px 5px 10px;
+    margin: auto;
     margin-top: 10px;
+    
 }
 
-article > div#Resume
+article > h5
 {
-    background-color: rgba(255, 255, 255, 0.432);
-    margin: 10px;
+    display: block;
+    position: relative;
+    width: 80%;
+    text-align: center;
+    font-size: 1.75em;
+    color: rgb(255, 255, 255);
+    z-index: 5;
+    text-shadow: rgb(0, 255, 242) 0px 5px 10px;
+    padding-top: 40px;
+    margin: auto;
+}
+
+article > hr
+{
+    border: solid 3px rgb(0, 0, 0);
+    width: 80%;
+    margin-top: 40px;
+    border-radius: 100px;
+    box-shadow: rgb(0, 255, 242) 0px 0px 10px;
+}
+
+article > p
+{
+    background-color:rgb(51, 71, 255);
+    border-radius: 5px;
+    margin: auto;
+    width: 90%;
+    box-shadow: rgb(0, 255, 242) 0px 0px 10px;
+    color: white;
+    font-size: 1.5em;
     padding: 5px;
-    border-radius: 15px;
-}
-
-article > div#Resume > h3
-{
-    font-size: 150%;
-    font-weight: bold;
-    text-shadow: white 0px 1px 2px;
-}
-
-article > div#Resume > h5
-{
-    font-size: 115%;
-    margin: 5px;
-
-}
-
-article > div#Resume > p
-{
-    margin: 10px;
-}
-
-article > div#Resume > ul
-{
-    list-style-type: disc;
-    margin: 15px;
-}
-
-article > div#Resume > ul > li
-{
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
