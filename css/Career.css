@@ -147,76 +147,126 @@ article > p
 
 @media only screen and (min-width: 800px) and (max-width: 1199px)
 {
-/* Grid Layouts */
-#outer-grid 
+/* Header */
+header 
 {
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 0.7fr 0.3fr;
-    overflow-wrap: break-word;
+    background-color: rgba(0, 29, 32, 0.5);
+    height: auto;
+    width: 100%;
+    position: relative;
+    box-shadow: black 0px 2px 15px;
 }
 
-/*#inner-grid 
+header > h1
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
+    display: inline-block;
+    position: relative;
+    color: white;
+    width: 60%;
+    font-size: 5em;
+    padding-top: 50px;
+    padding-left: 10px;
+    z-index: 5;
+    text-shadow: black 0px 5px 5px;
 }
-#inner-grid > div 
-{
-    background: lightgreen;
-    padding: 8px;
-}*/
-header
-{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-nav
-{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
-}
-#content
-{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 4;
 
-}
-footer
+header > div
 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    display: inline-block;
+    position: relative;
+    width: 35%;
+    font-size: 5em;
+    z-index: 5;
+    
+}
+
+header > div > img
+{
+    width: 100px;
+    position: relative;
 }
 
 
-html
+header > h2
 {
-    font-family: 'Sung';
-}
-body
-{
-    background-color: rgb(0, 0, 51);
-    font-family: 'Sung';
+    display: block;
+    position: relative;
+    color: rgb(135, 177, 180);
+    width: 55%;
+    font-size: 2em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    z-index: 5;
+    text-shadow: black 0px 5px 5px;
+    left: 40%;
 }
 
-/*header
+
+
+
+
+/* content area */
+
+article
 {
-    height: 400px;
-    width: 2000px;
-}*/
-
-/* HUGE NAVIGATION AREA */
-
+    height: auto;
+    display: block;
+    position: relative;
+    margin-bottom: 200px;
 }
+
+article > h3
+{
+    display: block;
+    position: relative;
+    width: 90%;
+    text-align: center;
+    font-size: 3em;
+    color: rgb(195, 251, 255);
+    z-index: 5;
+    text-shadow: rgb(255, 255, 255) 0px 5px 10px;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+
+article > h5
+{
+    display: block;
+    position: relative;
+    width: 80%;
+    text-align: center;
+    font-size: 1.75em;
+    color: rgb(255, 255, 255);
+    z-index: 5;
+    text-shadow: rgb(0, 255, 242) 0px 5px 10px;
+    padding-top: 40px;
+    margin: auto;
+}
+
+article > hr
+{
+    border: solid 3px rgb(0, 0, 0);
+    width: 80%;
+    margin-top: 40px;
+    border-radius: 100px;
+    box-shadow: rgb(0, 255, 242) 0px 0px 10px;
+}
+
+article > p
+{
+    background-color:rgb(51, 71, 255);
+    border-radius: 5px;
+    margin: auto;
+    width: 90%;
+    box-shadow: rgb(0, 255, 242) 0px 0px 10px;
+    color: white;
+    font-size: 1.5em;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 
 
 

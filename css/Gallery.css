@@ -186,76 +186,171 @@ article > table#webGallery > tbody > tr > td:hover > a > img
 
 @media only screen and (min-width: 800px) and (max-width: 1199px)
 {
-/* Grid Layouts */
-#outer-grid 
+
+
+/* Header */
+header 
 {
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 0.7fr 0.3fr;
-    overflow-wrap: break-word;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: auto;
+    width: 100%;
+    position: relative;
+    box-shadow: black 0px 2px 15px;
 }
 
-/*#inner-grid 
+h1
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
-}
-#inner-grid > div 
-{
-    background: lightgreen;
-    padding: 8px;
-}*/
-header
-{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-nav
-{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
-}
-#content
-{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 4;
-
-}
-footer
-{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    display: table-cell;
+    position: relative;
+    color: white;
+    width: 50%;
+    font-size: 5em;
+    padding-top: 50px;
+    padding-left: 10px;
+    z-index: 5;
+    text-indent: 10px;
+    text-shadow: black 0px 5px 5px;
 }
 
-
-html
+#galleryIcon
 {
-    font-family: 'Sung';
-}
-body
-{
-    background-color: rgb(0, 0, 51);
-    font-family: 'Sung';
-}
-
-/*header
-{
-    height: 400px;
-    width: 2000px;
-}*/
-
-/* HUGE NAVIGATION AREA */
+    position: relative;
+    display: table-cell;
+    width: 45%;
+    margin: 50px;
 
 }
+#galleryIcon > #box1
+{
+    position: absolute;
+    display: block;
+    z-index: 3;
+    transform: rotate(-10deg);
+    left: 0;
+    top: 0;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(135, 162, 235);
+    margin: 50px;
+    box-shadow: black 5px 5px 10px;
+}
+#galleryIcon > #box2
+{
+    position: absolute;
+    display: block;
+    z-index: 2;
+    width: 75px;
+    height: 75px;
+    left: 20px;
+    top: 20px;
+    background-color: skyblue;
+    margin: 50px;
+    box-shadow: black 5px 5px 10px;
+}
+#galleryIcon > #box3
+{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    transform: rotate(10deg);
+    width: 75px;
+    height: 75px;
+    left: 40px;
+    top: 40px;
+    background-color: rgb(74, 170, 207);
+    margin: 50px;
+    box-shadow: black 5px 5px 10px;
+}
+
+
+header > h2
+{
+    display: block;
+    position: relative;
+    color: rgb(195, 251, 255);
+    width: 55%;
+    font-size: 3em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    z-index: 5;
+    text-shadow: black 0px 5px 5px;
+    left: 40%;
+}
+
+/* content area */
+
+article
+{
+    height: auto;
+    display: block;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+article > h3
+{
+    display: block;
+    position: relative;
+    width: 90%;
+    text-align: center;
+    font-size: 3em;
+    color: rgb(195, 251, 255);
+    z-index: 5;
+    text-shadow: rgb(255, 255, 255) 0px 5px 10px;
+    margin-top: 10px;
+}
+
+article > table#webGallery
+{
+    margin: 10px;
+    border-collapse: separate;
+    border: white 1px solid;
+    background-color: black;
+    margin: auto;
+    border-spacing: 10px;
+    margin-top: 20px;
+}
 
 
 
+article > table#webGallery > tbody > tr > td
+{
+    transition: 1s;
+    width: 175px;
+    border: 1px solid rgb(187, 241, 255);
+    height: 175px;
+    border-radius: 100px;
+}
+
+article > table#webGallery > tbody > tr > td > a > img
+{
+    transition: 1s;
+    width: 175px;
+    height: 175px;
+    border-radius: 100px;
+    border: 1px solid rgb(187, 241, 255);
+}
+
+article > table#webGallery > tbody > tr > td:hover
+{
+    border: 1px solid rgb(173, 162, 255);
+    border-radius: 0px;
+    transition: 1s;
+}
+
+article > table#webGallery > tbody > tr > td:hover > a > img
+{
+    transition: 1s;
+    border-radius: 0px;
+    border: 1px solid rgb(187, 241, 255);
+}
+
+
+
+
+
+
+
+
+
+}
