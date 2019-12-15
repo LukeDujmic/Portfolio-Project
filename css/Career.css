@@ -219,7 +219,7 @@ article > h3
 {
     display: block;
     position: relative;
-    width: 90%;
+    width: 70%;
     text-align: center;
     font-size: 3em;
     color: rgb(195, 251, 255);
@@ -234,7 +234,7 @@ article > h5
 {
     display: block;
     position: relative;
-    width: 80%;
+    width: 70%;
     text-align: center;
     font-size: 1.75em;
     color: rgb(255, 255, 255);
@@ -250,7 +250,7 @@ article > hr
     width: 80%;
     margin-top: 40px;
     border-radius: 100px;
-    box-shadow: rgb(0, 255, 242) 0px 0px 10px;
+    box-shadow: rgb(0, 255, 242) 0px 0px 20px;
 }
 
 article > p
@@ -258,13 +258,15 @@ article > p
     background-color:rgb(51, 71, 255);
     border-radius: 5px;
     margin: auto;
-    width: 90%;
-    box-shadow: rgb(0, 255, 242) 0px 0px 10px;
+    width: 70%;
+    box-shadow: rgb(0, 255, 242) 0px 0px 20px;
     color: white;
     font-size: 1.5em;
-    padding: 5px;
+    padding: 10px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    line-height: 30px;
+    text-shadow: black 1px 2px 1px;
 }
 
 

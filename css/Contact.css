@@ -208,18 +208,20 @@ div#contactIcon > div#contactIconInner > div#mailLogo
     left: 10px;
 }
 
-div#contactIcon > div#contactIconInner > div#mailLogo
+div#contactIcon > div#contactIconInner > div#mailBox > div#mailLogo
 {
-    width: 30px;
-    height: 45px;
-    background-color: rgb(135, 170, 235);
-    position: absolute;
-    display: block;
-    z-index: 9;
-    transition: 0.5s;
-    transform: skew(30deg);
-    box-shadow: black 0px 5px 10px; 
-    left: 10px;
+    width: 50px;
+    height: 40px;
+    margin: auto;
+    top: 20px;
+    position: relative;
+}
+
+div#contactIcon > div#contactIconInner > div#mailBox > div#mailLogo > img
+{
+    width: 50px;
+    height: 40px;
+
 }
 
 div#contactIcon > div#contactIconInner > div#air1
@@ -352,6 +354,7 @@ article > .container > form > input[type=text], select, textarea {
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
     background-color: rgb(4, 0, 56);
+    
   }
   
   /* Style the submit button with a specific background color etc */
@@ -440,6 +443,7 @@ article > .container > form > input[type=text], select, textarea {
             width: 25%;
             position: relative;
             display: table-cell;
+            
         }
         
         div#contactIcon > div#contactIconInner
@@ -590,33 +594,22 @@ article > .container > form > input[type=text], select, textarea {
             box-shadow: black 0px 5px 10px; 
         }
         
-        div#contactIcon > div#contactIconInner > div#mailLogo
+        div#contactIcon > div#contactIconInner > div#mailBox > div#mailLogo
         {
-            width: 30px;
-            height: 45px;
-            background-color: rgb(135, 170, 235);
-            position: absolute;
-            display: block;
-            z-index: 9;
-            transition: 0.5s;
-            transform: skew(30deg);
-            box-shadow: black 0px 5px 10px; 
-            left: 10px;
+            width: 50px;
+            height: 40px;
+            margin: auto;
+            top: 20px;
+            position: relative;
         }
-        
-        div#contactIcon > div#contactIconInner > div#mailLogo
+
+        div#contactIcon > div#contactIconInner > div#mailBox > div#mailLogo > img
         {
-            width: 30px;
-            height: 45px;
-            background-color: rgb(135, 170, 235);
-            position: absolute;
-            display: block;
-            z-index: 9;
-            transition: 0.5s;
-            transform: skew(30deg);
-            box-shadow: black 0px 5px 10px; 
-            left: 10px;
+            width: 50px;
+            height: 40px;
+
         }
+
         
         div#contactIcon > div#contactIconInner > div#air1
         {
@@ -700,13 +693,15 @@ article > .container > form > input[type=text], select, textarea {
             display: block;
             position: relative;
             color: rgb(135, 177, 180);
-            width: 55%;
-            font-size: 2em;
+            width: 100%;
+            font-size: 2.5em;
             padding-top: 50px;
             padding-bottom: 50px;
             z-index: 5;
-            text-shadow: black 0px 5px 5px;
-            left: 40%;
+            text-shadow: black 2px 6px 5px;
+            text-align: center;
+            margin-top: 50px;
+
         }
         
         
@@ -748,7 +743,8 @@ article > .container > form > input[type=text], select, textarea {
             margin-bottom: 16px; /* Bottom margin */
             resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
             background-color: rgb(4, 0, 56);
-          }
+            
+            }
           
           /* Style the submit button with a specific background color etc */
           article > .container > form > input[type=submit] {
@@ -761,9 +757,10 @@ article > .container > form > input[type=text], select, textarea {
             margin-left: 25px;
             transition: 0.5s;
             z-index: 3;
+
           }
           
-          /* When moving the mouse over the submit button, add a darker green color */
+          /* When moving the mouse over the submit button, add a lighter blue color */
           article > .container > form > input[type=submit]:hover {
             background-color: #001aff;
             transform: scale(1.25);
@@ -776,8 +773,9 @@ article > .container > form > input[type=text], select, textarea {
           article > .container {
             border-radius: 5px;
             background-color: #000000;
-            padding: 20px;
+            padding: 50px;
             padding-bottom: 50px;
+            
           }
         
           label
