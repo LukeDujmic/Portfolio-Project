@@ -16,6 +16,8 @@
         <title>Contact Page</title>
     </head>
     <body>
+        <script src="js/portfolioFunctionality.js"></script>
+        <script src="js/contact.js"></script>
         <!--Page Content-->
 
 
@@ -166,10 +168,16 @@
                     <form action="action_page.php">
                   
                       <label for="fname">First Name</label>
-                      <input type="text" id="fname" name="firstname" placeholder="Your name.." style="font-size: 75%; color: white;">
+                      <input type="text" id="fname" name="firstname" placeholder="Your name.." style="font-size: 75%; color: white;" required>
                   
                       <label for="lname">Last Name</label>
-                      <input type="text" id="lname" name="lastname" placeholder="Your last name.." style="font-size: 75%; color: white;">
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name.." style="font-size: 75%; color: white;" required>
+
+                      <label for="email">E-mail</label>
+                      <input type="text" id="email" name="email" placeholder="someone@something.org" style="font-size: 75%; color: white;" required>
+
+                      <label for="lname">Preferred Phone</label>
+                      <input type="text" id="lname" name="lastname" placeholder="###-###-####" style="font-size: 75%; color: white;" required>
                   
                       <!--<label for="country">Country</label>
                       <select id="country" name="country">
@@ -179,9 +187,9 @@
                       </select>-->
                   
                       <label for="subject">Subject</label>
-                      <textarea id="subject" name="subject" placeholder="Tell me something...." style="height:200px; font-size: 75%; color: white;"></textarea>
+                      <textarea id="subject" name="subject" placeholder="Tell me something...." style="height:200px; font-size: 75%; color: white;" required></textarea>
                   
-                      <input type="submit" value="Submit">
+                      <input type="submit" value="Submit" onclick="submitForm()">
                   
                     </form>
                   </div>
