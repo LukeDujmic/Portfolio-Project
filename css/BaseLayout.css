@@ -72,7 +72,7 @@ html
 }
 body
 {
-    background-color: rgb(0, 23, 126);
+    background-color: rgb(15, 41, 156);
     font-family: 'Sung';
     width: 100vw;
 }
@@ -112,12 +112,12 @@ nav
     position: relative;
     width: 100%;
     height: 500px;
-    background-color: rgb(6, 0, 90);
+    background-color: rgb(13, 58, 141);
     margin: auto;
     padding-top: 25px;
     padding-bottom: 25px;
     z-index: 5;
-    box-shadow: rgb(0, 0, 0) 0px 15px 50px;
+    box-shadow: rgb(0, 112, 116) 0px 15px 50px;
 }
 
 
@@ -896,8 +896,8 @@ div#cluster
 /* Header */
 header 
 {
-    background-color: rgba(255, 255, 255, 0.055);
-    height: 500px;
+    background-color: rgba(0, 153, 255, 0.411);
+    height: 525px;
     width: 100%;
     position: relative;
     box-shadow: black 0px 2px 15px;
@@ -922,25 +922,25 @@ div#cloud1
 {
     position: absolute;
     display: block;
-    border-radius: 50%;
+    border-radius: 0px 50px 50px 0px;
     width: 300px;
-    height: 300px;
-    background-color: rgb(123, 116, 255);
+    height: 100px;
+    background-color: rgb(174, 246, 255);
     z-index: 3;
     left: -75px;
-    top: -75px;
+    top: 25px;
     box-shadow: black 0px 3px 10px;
 }
 div#cloud2
 {
     position: absolute;
     display: block;
-    border-radius: 50%;
+    border-radius: 0 100px 100px 0px;
     width: 500px;
-    height: 500px;
-    background-color: rgb(73, 64, 255);
+    height: 200px;
+    background-color: rgb(135, 130, 230);
     z-index: 3;
-    left: -350px;
+    left: -250px;
     top: 75px;
     box-shadow: black 0px 3px 10px;
 }
@@ -948,12 +948,12 @@ div#cloud3
 {
     position: absolute;
     display: block;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    background-color: rgb(75, 65, 255);
+    border-radius: 0px 50px 50px 0px;
+    width: 245px;
+    height: 75px;
+    background-color: rgb(99, 93, 207);
     z-index: 3;
-    left: 150px;
+    left: -50px;
     top: 50px;
     box-shadow: black 0px 3px 10px;
 }
@@ -961,12 +961,12 @@ div#cloud4
 {
     position: absolute;
     display: block;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    background-color: rgb(93, 85, 255);
+    border-radius: 0px 500px 500px 0px;
+    width: 335px;
+    height: 200px;
+    background-color: rgb(71, 65, 187);
     z-index: 3;
-    left: 75px;
+    left: -5px;
     top: 125px;
     box-shadow: black 0px 3px 10px;
 }
@@ -975,13 +975,13 @@ div#cloud5
 {
     position: absolute;
     display: block;
-    border-radius: 50%;
-    width: 450px;
-    height: 450px;
+    border-radius: 0px 500px 500px 0px;
+    width: 255px;
+    height: 20px;
     background-color: rgb(93, 85, 255);
     z-index: 3;
-    left: 150px;
-    top: -325px;
+    left: -5px;
+    top: 200px;
     box-shadow: black 0px 3px 10px;
 }
 
@@ -989,12 +989,12 @@ div#cloud6
 {
     position: absolute;
     display: block;
-    border-radius: 50%;
+    border-radius: 0px 500px 500px 0px;
     width: 100px;
     height: 100px;
-    background-color: rgb(69, 59, 255);
+    background-color: rgb(149, 146, 233);
     z-index: 3;
-    left: 300px;
+    left: -5px;
     top: 300px;
     box-shadow: black 0px 3px 10px;
 }
@@ -1003,12 +1003,12 @@ div#cloud7
 {
     position: absolute;
     display: block;
-    border-radius: 50%;
-    width: 75px;
+    border-radius: 0px 500px 500px 0px;
+    width: 175px;
     height: 75px;
-    background-color: rgb(93, 85, 255);
+    background-color: rgb(10, 0, 190);
     z-index: 3;
-    left: 225px;
+    left: -5px;
     top: 400px;
     box-shadow: black 0px 3px 10px;
 }
@@ -1017,12 +1017,12 @@ div#cloud8
 {
     position: absolute;
     display: block;
-    border-radius: 50%;
-    width: 50px;
+    border-radius: 0px 500px 500px 0px;
+    width: 350px;
     height: 50px;
-    background-color: rgb(133, 126, 255);
+    background-color: rgb(188, 184, 255);
     z-index: 3;
-    left: 125px;
+    left: -5px;
     top: 450px;
     box-shadow: black 0px 3px 10px;
 }
@@ -1031,12 +1031,12 @@ div#cloud9
 {
     position: absolute;
     display: block;
-    border-radius: 50%;
-    width: 125px;
+    border-radius: 0px 500px 500px 0px;
+    width: 250px;
     height: 125px;
     background-color: rgb(135, 129, 255);
     z-index: 3;
-    left: 225px;
+    left: -5px;
     top: 250px;
     box-shadow: black 0px 3px 10px;
 }
@@ -1045,12 +1045,12 @@ div#cloud10
 {
     position: absolute;
     display: block;
-    border-radius: 50%;
-    width: 125px;
+    border-radius: 0px 500px 500px 0px;
+    width: 425px;
     height: 125px;
-    background-color: rgb(93, 85, 255);
+    background-color: rgb(64, 55, 230);
     z-index: 3;
-    left: 125px;
+    left: -5px;
     top: 325px;
     box-shadow: black 0px 3px 10px;
 }
@@ -1059,12 +1059,12 @@ div#cloud11
 {
     position: absolute;
     display: block;
-    border-radius: 50%;
-    width: 50px;
+    border-radius: 0px 500px 500px 0px;
+    width: 225px;
     height: 50px;
     background-color: rgb(93, 85, 255);
     z-index: 3;
-    left: 450px;
+    left: -5px;
     top: 300px;
     box-shadow: black 0px 3px 10px;
 }
@@ -1073,12 +1073,12 @@ div#cloud12
 {
     position: absolute;
     display: block;
-    border-radius: 50%;
-    width: 125px;
+    border-radius: 0px 500px 500px 0px;
+    width: 50px;
     height: 125px;
     background-color: rgb(59, 49, 255);
     z-index: 3;
-    left: 400px;
+    left: -5px;
     top: 150px;
     box-shadow: black 0px 3px 10px;
 }
@@ -1086,12 +1086,12 @@ div#cloud13
 {
     position: absolute;
     display: block;
-    border-radius: 50%;
-    width: 100px;
+    border-radius: 0px 500px 500px 0px;
+    width: 475px;
     height: 100px;
     background-color: rgb(121, 113, 255);
     z-index: 3;
-    left: 325px;
+    left: -5px;
     top: 125px;
     box-shadow: black 0px 3px 10px;
 }
@@ -1099,13 +1099,13 @@ div#cloud14
 {
     position: absolute;
     display: block;
-    border-radius: 50%;
-    width: 62.5px;
-    height: 62.5px;
+    border-radius: 0px 500px 500px 0px;
+    width: 475px;
+    height: 20px;
     background-color: rgb(51, 41, 255);
     z-index: 3;
-    left: 475px;
-    top: 75px;
+    left: -5px;
+    top: 5px;
     box-shadow: black 0px 3px 10px;
 }
 
@@ -1214,10 +1214,10 @@ footer > #shadeBar
     width: 100%;
     position: absolute;
     margin-left: 0px;
-    margin-top: -95px;
+    margin-top: -55px;
     height: 100px;
-    box-shadow: black -50px -50px 50px, black 50px -50px 50px;
-    background-color: black;
+    box-shadow: rgb(0, 3, 34) -50px -50px 50px, rgb(0, 3, 34) 50px -50px 50px;
+    background-color: rgb(0, 3, 34);
 }
 
 footer > .stars
@@ -1759,10 +1759,10 @@ footer
     position: relative;
     display: block;
     width: 100%;
-    background-color: black;
+    background-color: rgb(0, 3, 34);
     z-index: 2;
     height: auto;
-    box-shadow: rgb(0, 0, 87) 0px -100px 100px;
+    box-shadow: rgb(0, 3, 34) 0px -100px 100px;
     padding-top: 10px;
     padding-bottom: 110px;
 }
