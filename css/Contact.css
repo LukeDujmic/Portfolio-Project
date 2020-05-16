@@ -14,7 +14,7 @@
 /* Header */
 header 
 {
-    background-color: rgba(0, 55, 61, 0.5);
+    background-color: rgba(0, 153, 255, 0.411);
     height: auto;
     width: 100%;
     position: relative;
@@ -347,32 +347,34 @@ article > h3
 article > .container > form > input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
-    border: 1px solid rgb(4, 0, 255); /* Gray border */
-    border-radius: 4px; /* Rounded borders */
+    border: 2px solid rgb(0, 110, 255); /* Gray border */
+    border-radius: 30px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-    background-color: rgb(4, 0, 56);
+    background-color: rgb(0, 34, 126);
     
   }
   
   /* Style the submit button with a specific background color etc */
   article > .container > form > input[type=submit] {
-    background-color: rgb(0, 38, 85);
+    background-color: rgb(0, 59, 131);
     color: rgb(0, 217, 255);
     padding: 12px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     margin-left: 25px;
     transition: 0.5s;
     z-index: 3;
+    width: 100px;
+
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
   article > .container > form > input[type=submit]:hover {
-    background-color: #001aff;
+    background-color: #0059ff;
     transform: scale(1.25);
     transition: 0.33s;
     color: white;
@@ -382,7 +384,7 @@ article > .container > form > input[type=text], select, textarea {
   /* Add a background color and some padding around the form */
   article > .container {
     border-radius: 5px;
-    background-color: #000000;
+    background-color: #042724;
     padding: 20px;
     padding-bottom: 50px;
   }
